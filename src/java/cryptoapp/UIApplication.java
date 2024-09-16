@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.List;
 
-public class UIApplication extends javafx.application.Application {
+public class  UIApplication extends javafx.application.Application {
 
     public static void main(String[] args) {
         launch(args);

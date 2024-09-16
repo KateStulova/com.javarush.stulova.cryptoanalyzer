@@ -3,7 +3,6 @@ module cryptoapp {
     requires javafx.controls;
 
 
-//    opens cryptoapp to javafx.graphics;
     exports cryptoapp;
     opens cryptoapp to javafx.fxml;
     exports cryptoapp.controller;
