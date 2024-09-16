@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cryptoapp.controller.UIController">
+   <children>
+      <Spinner fx:id="KeyValue" layoutX="21.0" layoutY="260.0" />
+      <Label fx:id="ModeLabel" layoutX="23.0" layoutY="20.0" prefHeight="26.0" prefWidth="176.0" text="Choose method">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FileInputField" layoutX="23.0" layoutY="111.0" prefHeight="26.0" prefWidth="363.0" />
+      <TextField fx:id="FileOutputField" layoutX="23.0" layoutY="182.0" prefWidth="363.0" />
+      <ChoiceBox fx:id="ModeChoiceBox" layoutX="21.0" layoutY="46.0" prefWidth="150.0" />
+      <Button fx:id="FileInputButton" layoutX="449.0" layoutY="109.0" mnemonicParsing="false" onAction="#onOpenFileButtonClick" prefHeight="26.0" prefWidth="150.0" text="Choose file">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="FolderOutputButton" layoutX="449.0" layoutY="181.0" mnemonicParsing="false" onAction="#onOpenFolderButtonClick" prefHeight="26.0" prefWidth="150.0" text="Choose directory">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="KeyMode" layoutX="23.0" layoutY="234.0" prefHeight="26.0" prefWidth="108.0" text="Choose key">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="ProccesButton" layoutX="407.0" layoutY="247.0" mnemonicParsing="false" onAction="#onProcessItButtonClick" prefHeight="53.0" prefWidth="192.0" text="Process it!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="LogsField" editable="false" layoutX="21.0" layoutY="334.0" prefHeight="189.0" prefWidth="578.0" />
+      <Label fx:id="LogsLabel" layoutX="21.0" layoutY="308.0" prefHeight="26.0" prefWidth="54.0" text="Logs">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="154.0" prefHeight="26.0" prefWidth="363.0" text="File output, add filename for output in chosen directory">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="85.0" prefHeight="26.0" prefWidth="281.0" text="File input">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
